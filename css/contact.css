@@ -27,7 +27,7 @@ header figure{
 }
 header figure img{
     width: 100%;
-    border: 1px solid rgb(252, 212, 80);
+    border: 1px solid #c99f34;
 }
 
     header ul {
@@ -37,7 +37,7 @@ header figure img{
     align-items: center;
 }
 header li a {
-    color: rgb(252, 212, 80);
+    color: #c99f34;
     font-size: larger;
     text-decoration: none;
     margin-left: 20px;
@@ -45,7 +45,7 @@ header li a {
 
 nav i{
     margin-left: 20px;
-    color: rgb(252, 212, 80);
+    color: #c99f34;
 }
 
 header li :hover{
@@ -87,19 +87,20 @@ footer{
 footer .social-media-icons{
     font-size: larger;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
 }
-footer .social-media-icons  a{
+footer .social-media-icons a{
     text-decoration: none;
-    color: rgb(252, 212, 80);
+    color: #c99f34;
     font-size: larger;
+    margin-left: 10px;
 }
  footer .rgpd li {
     text-align: center;
 }
 footer .rgpd li a {
-    color: rgb(252, 212, 80);
+    color: #c99f34;
     font-size: larger;
     text-decoration: none;
 }
@@ -193,7 +194,7 @@ label{
         position: absolute;
         right: 24px;
         top: 24px;
-        color: rgb(252, 212, 80);
+        color: #c99f34;
         font-size: 30px;
     }
 

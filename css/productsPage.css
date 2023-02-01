@@ -27,7 +27,7 @@ header figure{
 }
 header figure img{
   width: 100%;
-  border: 1px solid rgb(252, 212, 80);
+  border: 1px solid #c99f34;
 }
 
   header ul {
@@ -37,7 +37,7 @@ header figure img{
   align-items: center;
 }
 header li a {
-  color: rgb(252, 212, 80);
+  color: #c99f34;
   font-size: larger;
   text-decoration: none;
   margin-left: 20px;
@@ -47,7 +47,7 @@ header li a {
 }
 nav i{
   margin-left: 20px;
-  color: rgb(252, 212, 80);
+  color: #c99f34;
 }
 
 header li :hover{
@@ -67,19 +67,28 @@ h1 {
 
 
 .imgM {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 15px 0 15px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 15px 0 15px 0;
 }
 .imgM figure{
-    width: 30%;
-    border-bottom: 1px solid rgb(252, 212, 80);
+  width: 30%;
+  border-bottom: 1px solid #c99f34;
+  transition: transform .2s;
 }
+.imgM figure  :hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
 .imgM figure img{
-    width: 100%;
+  width: 100%;
 }
   
 .content{
@@ -176,7 +185,7 @@ figure:hover .content *{
   }
 
   .dropdown a :hover{
-    background-color: rgb(252, 212, 80);
+    background-color: #c99f34;
     color: black;
   }
   
@@ -218,19 +227,21 @@ footer{
 footer .social-media-icons{
   font-size: larger;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 20px;
 }
-footer .social-media-icons  a{
+footer .social-media-icons a{
   text-decoration: none;
-  color: rgb(252, 212, 80);
+  color: #c99f34;
   font-size: larger;
+  margin-left: 10px;
 }
+
 footer .rgpd li {
   text-align: center;
 }
 footer .rgpd li a {
-  color: rgb(252, 212, 80);
+  color: #c99f34;
   font-size: larger;
   text-decoration: none;
 }
@@ -264,7 +275,7 @@ footer .rgpd li a {
       position: absolute;
       right: 24px;
       top: 24px;
-      color: rgb(252, 212, 80);
+      color: #c99f34;
       font-size: 30px;
   }
   .imgM { 

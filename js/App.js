@@ -13,6 +13,8 @@ function mobileNav() {
 
 } 
 
+
+// Filters
 $(".dropdown dt a").on('click', function() {
     $(".dropdown dd ul").slideToggle('fast');
   });
@@ -45,4 +47,16 @@ $(".dropdown dt a").on('click', function() {
       $('.dropdown dt a').append(ret);
   
     }
-  });
+  }
+);
+
+// increment cart item
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value<10){
+        value++;
+            document.getElementById('number').value = value;
+    }
+}
