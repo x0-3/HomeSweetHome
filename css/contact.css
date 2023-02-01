@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,li{
+    font-family: 'Signika', sans-serif;
+}
+
+h1,h2,h4{
+    font-family: 'Kaushan Script', cursive;
+}
+/* header */
+header{
+    background-color: black;
+    color: white;
+    font-size: larger;
+    display: flex; 
+    /* padding: 5px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure{
+    width: 10%;
+}
+header figure img{
+    width: 100%;
+    border: 1px solid rgb(252, 212, 80);
+}
+
+    header ul {
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header li a {
+    color: rgb(252, 212, 80);
+    font-size: larger;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav i{
+    margin-left: 20px;
+    color: rgb(252, 212, 80);
+}
+
+header li :hover{
+    color: white;
+}
+
+nav a :hover{
+    color:white;
+}
+
+.fa-bars{
+    display: none;
+}
+
+
+/* contact section */
+h1{
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+aside{
+    margin: 0 auto 50px 50px;
+    width: 67%;
+}
+
+
+/* footer */
+footer{
+    background-color: black;
+    position: inherit;
+    width: 100%;
+}
+footer .social-media-icons{
+    font-size: larger;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+footer .social-media-icons  a{
+    text-decoration: none;
+    color: rgb(252, 212, 80);
+    font-size: larger;
+}
+ footer .rgpd li {
+    text-align: center;
+}
+footer .rgpd li a {
+    color: rgb(252, 212, 80);
+    font-size: larger;
+    text-decoration: none;
+}
+
+/* newsletter */
+
+form{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto 30px auto;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+form h4{
+    color: white;
+    margin: 15px 0 15px 0;
+}
+
+form ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+form input{
+    padding: 3px;
+    color: grey;
+}
+
+
+form ul a{
+    color: black;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+    padding: 6px 15px;
+    /* margin-left: 15px; */
+    text-decoration: none;
+}
+
+fieldset{
+    display: flex;
+    border: none;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label{
+    color: white;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: unset;
+        padding: 15px 0 15px 0;
+
+    }
+
+    header figure{
+        width: 21%;
+    }
+    header ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header li a {
+        margin-left: 0;
+    }
+    nav i {
+        margin-left: 0;
+    }
+
+    .fa-bars{
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        color: rgb(252, 212, 80);
+        font-size: 30px;
+    }
+
+    .contact-info {
+        flex-direction: column-reverse;
+    }
+    aside {
+        margin: 0 0 50px 0;
+    }
+    form {
+        width: 100%;
+    }
+
+
+    footer{
+        position: sticky;
+    }
+
+}

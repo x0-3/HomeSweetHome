@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,li{
+  font-family: 'Signika', sans-serif;
+}
+
+h1,h2{
+  font-family: 'Kaushan Script', cursive;
+}
+/* header */
+header{
+  background-color: black;
+  color: white;
+  font-size: larger;
+  display: flex; 
+  /* padding: 5px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+header figure{
+  width: 10%;
+}
+header figure img{
+  width: 100%;
+  border: 1px solid rgb(252, 212, 80);
+}
+
+  header ul {
+  list-style:none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header li a {
+  color: rgb(252, 212, 80);
+  font-size: larger;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.fa-bars{
+  display: none;
+}
+nav i{
+  margin-left: 20px;
+  color: rgb(252, 212, 80);
+}
+
+header li :hover{
+  color: white;
+}
+
+nav a :hover{
+  color:white;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin: 15px 0 15px 0;
+}
+
+
+
+.imgM {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
+.imgM figure{
+    width: 30%;
+    border-bottom: 1px solid rgb(252, 212, 80);
+}
+.imgM figure img{
+    width: 100%;
+}
+  
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.content *{
+    transform: translateY(-70%);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.content h2{
+    font-size: 35px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+.content h3{
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+figure:hover .content{
+    opacity: 1;
+}
+
+figure:hover .content *{
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+  .dropdown {
+    top:50%;
+    transform: translateY(-50%);
+  }
+  
+  p {
+    color: black;
+  }
+  
+  .dropdown dd,
+  .dropdown dt {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .dropdown ul {
+    margin: -1px 0 0 0;
+  }
+  
+  .dropdown dd {
+    position: relative;
+  }
+  
+  .dropdown a,
+  .dropdown a:visited {
+    color: black;
+    text-decoration: none;
+    outline: none;
+    font-size: 12px;
+  }
+  
+  .dropdown dt a {
+    display: block;
+    padding: 8px 20px 5px 10px;
+    min-height: 25px;
+    line-height: 24px;
+    overflow: hidden;
+    border: 0;
+    width: 272px;
+  }
+  
+  .dropdown dt a span,
+  .multiSel span {
+    cursor: pointer;
+    display: inline-block;
+    /* padding: 0 3px 2px 0; */
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    border: 0;
+    padding: 10px 0;
+    margin: 5px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .dropdown a :hover{
+    background-color: rgb(252, 212, 80);
+    color: black;
+  }
+  
+  .dropdown dd ul {
+    background-color: #000000;
+    border: 0;
+    color: rgb(255, 253, 253);
+    display: none;
+    left: 0px;
+    padding: 2px 15px 2px 5px;
+    position: absolute;
+    top: 2px;
+    width: 270px;
+    list-style: none;
+    height: 100px;
+    overflow: auto;
+  }
+  
+  .dropdown span.value {
+    display: none;
+  }
+  
+  .dropdown dd ul li a {
+    padding: 5px;
+    display: block;
+  }
+  
+  .dropdown dd ul li a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+
+  /* footer */
+footer{
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+}
+footer .social-media-icons{
+  font-size: larger;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+footer .social-media-icons  a{
+  text-decoration: none;
+  color: rgb(252, 212, 80);
+  font-size: larger;
+}
+footer .rgpd li {
+  text-align: center;
+}
+footer .rgpd li a {
+  color: rgb(252, 212, 80);
+  font-size: larger;
+  text-decoration: none;
+}
+
+/* mobile version */
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: unset;
+    padding: 15px 0 15px 0;
+
+  }
+  header figure{
+    width: 21%;
+  }
+
+  header ul{
+      flex-direction: column;
+      width: 100%;
+  }
+
+  header li a {
+      margin-left: 0;
+  }
+  nav i {
+      margin-left: 0;
+  }
+
+  .fa-bars{
+      display: block;
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      color: rgb(252, 212, 80);
+      font-size: 30px;
+  }
+  .imgM { 
+    flex-direction: column;
+  }
+  .imgM figure {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

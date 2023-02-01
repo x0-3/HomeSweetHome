@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/logInPage.css">
+</head>
+<body>
+
+  <header>
+      <figure>
+        <a href="index.html">
+          <img class="Logo " src="image/logo.png" alt="logo">
+        
+        </a>
+      </figure>
+      <nav id="myLinks">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="productsPage.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <a href="logInPage.html"><i class="fa fa-user"></i></a>
+              <a href="#"><i class="fa fa-cart-plus"></i></a>
+          </ul>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </header>
+
+  <form action="#" method="post" target="_blank">
+      <section class="wrapper">
+          <section class="login">
+            <section class="login-form">      
+              <h1 class="login-title">Login</h1>
+              <section class="form-wrapper">
+                <section class="input-wrapper">
+                    <label class="label" for="email">Email Address</label>
+                  <input class="input" type="text" id="email" name="username" required autocomplete="off"/>
+                </section><br>
+                <section class="input-wrapper">
+                    <label class="label" for="password">Password</label>
+                  <input class="input" type="password" id="password" name="password" required/>
+                </section>
+                <section class="action-help">
+                  <a class="help-link" href="#">Forgot your password?</a>
+                </section>
+                <section class="actions">
+                  <input class="action" type="submit" value="Login"/>
+                  <section class="signup-action">
+                    Don't have an account? &nbsp <a class="signup-link" href="#">Sign Up</a>
+                  </section>
+                </section>
+                
+              </section>
+            </section>
+            <section class="login-decoration">
+            </section>
+          </section>
+        </section>
+    </form>
+  <script src="js/App.js"></script>
+</body>
+</html>
+
+
