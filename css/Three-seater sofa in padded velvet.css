@@ -57,6 +57,13 @@ nav a :hover{
     color:white;
 }
 
+nav input{
+    width: 10%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
 /* footer */
 footer{
     background-color: black;
@@ -131,14 +138,19 @@ h2{
     width: 30%;
 }
 
-.Produits button {
+.Produits button,input {
     cursor: pointer;
     background-color: black;
     padding: 10px;
+    margin-left: 5px;
     color: white;
 }
 
 .Produits a :hover {
+    background-color: #c99f34;
+    color: black;
+}
+input.button[type="submit"]:hover {
     background-color: #c99f34;
     color: black;
 }

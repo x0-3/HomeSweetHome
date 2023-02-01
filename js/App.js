@@ -53,7 +53,7 @@ $(".dropdown dt a").on('click', function() {
 // increment cart item
 function incrementValue()
 {
-    var value = parseInt(document.getElementById('number').value, 10);
+    var value = parseInt(document.getElementById('number').value,10);
     value = isNaN(value) ? 0 : value;
     if(value<10){
         value++;
