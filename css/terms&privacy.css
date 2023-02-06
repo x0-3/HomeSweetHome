@@ -37,7 +37,7 @@ header figure img{
     list-style:none;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 header li a {
     color: #c99f34;

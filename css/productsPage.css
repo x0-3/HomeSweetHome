@@ -30,11 +30,11 @@ header figure img{
   border: 1px solid #c99f34;
 }
 
-  header ul {
+header ul {
   list-style:none;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 header li a {
   color: #c99f34;
@@ -77,18 +77,19 @@ h1 {
 .imgM figure{
   width: 30%;
   border-bottom: 1px solid #c99f34;
-  transition: transform .2s;
+  
 }
 .imgM figure  :hover{
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
 }
 
 .imgM figure img{
   width: 100%;
+  transition: transform .2s;
 }
   
 .content{

@@ -33,7 +33,7 @@ header ul {
 list-style:none;
 display: flex;
 justify-content: space-around;
-align-items: center;
+align-items: baseline;
 }
 header li a {
     color: #c99f34;
@@ -111,20 +111,21 @@ h2{
 
 .categories figure{
     width: 45%;
-    transition: transform .2s;
+    
 }
 
-.categories figure :hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+.categories a :hover{
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
 }
 
 .categories img{
     width: 100%;
     display: block;
+    transition: transform .2s;
 }
 .categories figcaption{
     text-align: center;

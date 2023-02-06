@@ -36,7 +36,7 @@ header figure img{
     list-style:none;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 header li a {
     color: #c99f34;
@@ -63,7 +63,6 @@ nav a :hover{
 .wrapper {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #1a1a1a, #1a1a1a);
     display: flex;
     align-items: center;
     justify-content: center;
