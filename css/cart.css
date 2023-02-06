@@ -445,13 +445,11 @@ strong {
   font-size: 0.8em;
   padding-top: 10px;
   cursor: pointer;
+  color: white;
 }
-.cart-footer .cont-shopping i {
-  position: relative;
-  top: 0px;
-  margin-right: 6px;
-  font-size: 75%;
-}
+/* .cart-footer .cont-shopping a {
+  color: white;
+} */
 .cart-footer .btn {
   float: right;
   width: 200px;
