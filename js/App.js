@@ -13,6 +13,14 @@ function mobileNav() {
 
 } 
 
+// increment cart item
+let number = document.getElementById("number")
+let nbProduct = 0
+function incrementValue(){
+  nbProduct = nbProduct + 1
+  number.innerText = nbProduct
+}
+
 
 // Filters
 $(".dropdown dt a").on('click', function() {
@@ -50,13 +58,3 @@ $(".dropdown dt a").on('click', function() {
   }
 );
 
-// increment cart item
-function incrementValue()
-{
-    var value = parseInt(document.getElementById('number').value,10);
-    value = isNaN(value) ? 0 : value;
-    if(value<10){
-        value++;
-            document.getElementById('number').value = value;
-    }
-}
